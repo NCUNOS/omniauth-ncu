@@ -18,7 +18,7 @@ NCU OAuth API lets you set scopes to provide granular access to different types 
 
 ```
 use OmniAuth::Builder do
-  provider :ncu, ENV['NCU_CLIENT_ID'], ENV['NCU_CLIENT_SECRET'], scope: "user.info.basic.read,course.schedule.read"
+  provider :ncu, ENV['NCU_CLIENT_ID'], ENV['NCU_CLIENT_SECRET'], scope: %w(user.info.basic.read course.schedule.read)
 end
 ```
 
