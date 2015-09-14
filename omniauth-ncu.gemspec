@@ -4,8 +4,8 @@ require File.expand_path('../lib/omniauth-ncu/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["David Kuo"]
   gem.email         = ["me@davy.tw"]
-  gem.description   = %q{OmniAuth strategy for NCU.}
-  gem.summary       = %q{OmniAuth strategy for NCU.}
+  gem.description   = %q{OmniAuth strategy for NCU OAuth.}
+  gem.summary       = %q{OmniAuth strategy for NCU OAuth.}
   gem.homepage      = "https://github.com/ncunos/omniauth-ncu"
   gem.license       = "MIT"
 
@@ -20,8 +20,8 @@ Gem::Specification.new do |gem|
   # Nothing lower than omniauth-oauth2 1.1.1
   # http://www.rubysec.com/advisories/CVE-2012-6134/
   gem.add_dependency 'omniauth-oauth2', '>= 1.1.1', '< 2.0'
-  gem.add_development_dependency 'rspec', '~> 2.7'
-  gem.add_development_dependency 'rack-test'
-  gem.add_development_dependency 'simplecov'
-  gem.add_development_dependency 'webmock'
+  gem.add_development_dependency 'rspec', '~> 2.99'
+  gem.add_development_dependency 'rack-test', '~> 0.6'
+  gem.add_development_dependency 'simplecov', '~> 0.10'
+  gem.add_development_dependency 'webmock', '~> 1.21'
 end
